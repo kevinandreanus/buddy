@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kevinandreanus/buddy#readme",
   "dependencies": {
+    "bootstrap": "^5.0.0",
     "tailwindcss": "^2.1.2"
   }
 }

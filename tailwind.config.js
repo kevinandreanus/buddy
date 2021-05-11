@@ -4,16 +4,23 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins']
+        poppins: ["Poppins"],
       },
       colors: {
-        hitam: '#251526',
-        merah: '#CE272D',
-      }
+        hitam: "#251526",
+        merah: "#CE272D",
+      },
+      screens: {
+        ipad: "769px",
+        ipadpro: "1025px",
+        navbar: "1280px",
+        searchbar: "875px",
+        iphone5: "321px",
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
