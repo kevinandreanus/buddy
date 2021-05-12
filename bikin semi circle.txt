@@ -1,0 +1,14 @@
+<div class="semi-circle">
+          <style>
+            div.semi-circle {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translate(-50%, -50%);
+              height: 200px;
+              width: 200px;
+              border-radius: 0 150px 150px 0;
+              background-color: #ce272d;
+            }
+          </style>
+</div>

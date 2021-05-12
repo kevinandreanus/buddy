@@ -52,8 +52,8 @@
                   px-4
                   py-2
                   mt-2
-                  text-sm text-gray-900
-                  bg-gray-200
+                  text-sm
+                  bg-transparent
                   rounded-lg
                   dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200
                   md:mt-0
@@ -215,11 +215,67 @@
         <a class="block py-2 px-4 text-xs" href="#">Profile</a>
       </div>
     </nav>
-
-    <div>
-      <h1>Content -under work-</h1>
-    </div>
   </body>
+
+  <div class="flex flex-col h-screen">
+    <div class="bg-blue-300 flex-1 flex">
+      <div class="bg-red-300 w-48 flex-none">
+        side-content
+        <div class="semi-circle">
+          <style>
+            div.semi-circle {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              margin: 0 auto;
+              transform: translate(-50%, -50%);
+              height: 200px;
+              width: 200px;
+              border-radius: 0 150px 150px 0;
+              background-color: #ce272d;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="flex-1 bg-red-500 p-6">
+        <div class="flex flex-col screen font-semibold text-2xl ml-20">Settings</div>
+        <div class="flex-1 border m-12 p-8 mt-6">
+          <div class="flex h-screen">
+            <div class="bg-green-200 justify-center text-center p-4 px-10">
+              <img class="rounded-full" src="img/testprofile.jpg" alt="profile" width="128px" height="128px" />
+              <p class="font-semibold text-md">Squid Tampan</p>
+              <p class="text-xs">tampanberani88</p>
+              <p class="text-2xl font-semibold mt-6">328</p>
+              <div class="relative mr-4">
+                <p class="font-semibold text-xs">Views</p>
+                <svg class="absolute right-5 bottom-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 7l-3.36-2.171c-.405.625-.64 1.371-.64 2.171 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4c-.742 0-1.438.202-2.033.554l2.033 3.446z"
+                  />
+                </svg>
+              </div>
+              <p class="text-xs mt-5">9 class completed</p>
+            </div>
+            <div class="flex-1 bg-green-400 p-4 px-10">
+              <hr class="mb-5" />
+              <p class="font-semibold mb-2">Bio</p>
+              <textarea class="w-full h-20 rounded-lg text-sm p-2" cols="30" rows="10">Dibutuhkan trainer basket untuk mengajarkan hal-hal dasar kepada anak-anak sd untuk durasi 1 bulan.</textarea>
+              <hr class="mt-5 mb-5" />
+              <p class="font-semibold mb-2">Tanggal Lahir</p>
+              <input class="rounded-lg p-1 text-sm" type="date" value="2000-01-01" />
+              <hr class="mt-5 mb-5" />
+              <p class="font-semibold mb-2">Email</p>
+              <input class="w-full rounded-lg p-1 text-sm" type="email" />
+              <hr class="mt-5 mb-5" />
+              <p class="font-semibold mb-2">Nomor HP</p>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-500">bottom</div>
+  </div>
 
   <script>
     var btn = document.getElementById("mobile-menu-btn");
